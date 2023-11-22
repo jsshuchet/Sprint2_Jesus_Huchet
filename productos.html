@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/carrito.js"></script>
-    <title>Inicio</title>
+
+    <title>Productos</title>
 </head>
 
-
+<body>
     <header>
+
         <nav>
             <ul class="menu">
                 <img src="img/WEBLANCO.png" alt="logo">
@@ -18,93 +20,68 @@
                 <li><a href="productos.html">Productos</a></li>
                 <li><a href="wecircular.html">We Circular</a></li>
                 <li><a href="info.html">+ Info</a></li>
-                <li><a href="productos.html" id="carrito-icono"><i class="fas fa-shopping-cart">
-                <img src="img/carrito-de-compras.png" alt="Imagen 1"></i></a></li>
+                <li><a href="#" id="carrito-icono"><i class="fas fa-shopping-cart">
+                            <img src="img/carrito-de-compras.png" alt="Imagen 1"></i></a></li>
             </ul>
         </nav>
 
         <div class="mensaje">
             PRODUCTOS CON OTRA OPORTUNIDAD - 3 CUOTAS SIN INTERES - 20% OFF PAGANDO CON EFECTIVO - ENVIO GRATIS EN CABA
         </div>
-
-    </header>
-    
-    <body>
+       </header>
        
-        <section class="cajas">
+       <section class="cajas">
             <div class="caja_contenedor">
                 <div class="items" data-id="1" data-nombre="Boby Floral" data-precio="8000">
                     <img src="img/ropa1.PNG" alt="Imagen 1">
                     Boby Floral
                     <div>8000$</div>
-                    
+                    <button class="agregar-carrito">Agregar al carrito</button>
 
                 </div>
                 <div class="items" data-id="2" data-nombre="Conjunto Recien Nacido" data-precio="15000">
                     <img src="img/ropa2.png" alt="Imagen 1">
                     Conjunto Recien Nacido
                     <div>15000$</div>
-                </div>
+                    <button class="agregar-carrito">Agregar al carrito</button>
 
+                </div>
                 <div class="items" data-id="3" data-nombre="Body Orejitas" data-precio="7500">
                     <img src="img/ropa3.png" alt="Imagen 1">
                     Body Orejitas
                     <div>7500$</div>
-                </div>
+                    <button class="agregar-carrito">Agregar al carrito</button>
 
+                </div>
                 <div class="items" data-id="4" data-nombre="Conjunto Recien Nacido" data-precio="18000">
                     <img src="img/ropa4.png" alt="Imagen 1">
                     Conjunto Recien Nacido
                     <div>18000$</div>
+                    <button class="agregar-carrito">Agregar al carrito</button>
                 </div>
-
                 <div class="items" data-id="5" data-nombre="Short Floral" data-precio="6500">
                     <img src="img/ropa5.png" alt="Imagen 1">
                     Short Floral
                     <div>6500$</div>
-                </div>
+                    <button class="agregar-carrito">Agregar al carrito</button>
 
+                </div>
                 <div class="items" data-id="6" data-nombre="Conjunto Floral" data-precio="9500">
                     <img src="img/ropa6.png" alt="Imagen 1">
                     Conjunto Floral
                     <div>9500$</div>
-                </div>
-      
-        </section>
+                    <button class="agregar-carrito">Agregar al carrito</button>
 
-
-        <section>
-            <div class="contenedor_imagenes">
-                <div class="imagenes_abajo">
-                    <img src="img/carrusel 1.jpg" alt="Imagen 1">
-                    <img src="img/carruse 2.jpg" alt="Imagen 2">
-                    <img src="img/carrusel 3.jpg" alt="Imagen 3">
-                    <img src="img/carrusel 4.jpg" alt="Imagen 4">
-                    <img src="img/carrusel 5.jpg" alt="Imagen 5">
                 </div>
             </div>
-        </section>
-
-        <footer>
-            <div id="pie-de-pagina">
-           
-                <div class="circular">
-                    <img src="img/whatsapp.png" alt="Whatsapp">
-                    <a href="https://api.whatsapp.com/send/?phone=5491126903005" id="redes"></a>
-               
-                
-                    <img src="img/instagram.png" alt="Instagram">
-                    <a href="https://api.whatsapp.com/send/?phone=5491126903005" id="redes"></a>
-                   
-                    <a href="" id="redes">
-                        <img src="img/facebook.png" alt="Facebook">
-                </div>
+       
+        <div id="carrito">
+                <h2>Carrito</h2>
+                <ul id="carrito-lista"></ul>
+                <p>Total: $<span id="total">0.00</span></p>
             </div>
-        </div>
-    </div>
-        </footer>
-
-  
+        
+        </section>
 
 </body>
 
