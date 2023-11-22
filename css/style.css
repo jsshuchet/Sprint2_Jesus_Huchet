@@ -1,27 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Kreon&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Kreon', serif;
 }
 
 /* Estilos para la barra de navegación */
-.menu  {
+.menu {
     background-color: #000000;
     text-align: center;
-    
+
 }
-.menu img  {
-display:block;
-width: 15%;
-margin: 1% auto;
+
+.menu img {
+    display: block;
+    width: 15%;
+    margin: 1% auto;
 
 }
 
 .menu li {
-    display: inline-block; 
-    
+    display: inline-block;
+
+}
+
+.menu li img {
+    display: inline-block;
+    width: 35px;
+    /* Ancho fijo para todas las imágenes */
+    height: 30px;
+    margin: 0% auto;
+
+}
+
+#carrito-icono i {
+    color: white;
+    font-size: 24px;
+    vertical-align: middle;
+    margin-left: -10px;
 }
 
 .menu a {
@@ -30,54 +47,66 @@ margin: 1% auto;
     padding: 40px 20px;
     text-align: center;
     text-decoration: none;
-    
+
 
 }
+
 .menu li a:hover {
     background-color: #01964b;
-    
+
 }
 
 
 .imagenes_abajo {
     margin: 30px auto;
-    display: inline-block; /* Mantiene el carrusel en línea */
-    animation: desplazamiento 10s infinite linear; /* Animación de desplazamiento automático */
+    display: inline-block;
+    /* Mantiene el carrusel en línea */
+    animation: desplazamiento 10s infinite linear;
+    /* Animación de desplazamiento automático */
 
 }
 
 .imagenes_abajo img {
-    width: 250px; /* Ancho fijo para todas las imágenes */
-    height: 200px; /* Altura fija para todas las imágenes */
-    margin: 0 auto; /* Centra horizontalmente cada imagen dentro del carrusel */
+    width: 250px;
+    height: 200px;
+    margin: 0 auto;
 }
 
 @keyframes desplazamiento {
     0% {
-        transform: translateX(0); /* Inicio: sin desplazamiento */
+        transform: translateX(0);
+        /* Inicio: sin desplazamiento */
     }
+
     100% {
-        transform: translateX(700px); /* Final: desplazamiento a la izquierda (ajusta el valor según el ancho de las imágenes) */
+        transform: translateX(700px);
+        /* Final: desplazamiento a la izquierda (ajusta el valor según el ancho de las imágenes) */
     }
 }
 
 .cajas {
     margin: 20px auto;
-    text-align: center; /* Centra horizontalmente el contenido */
+    text-align: center;
+    /* Centra horizontalmente el contenido */
 }
 
 .caja_contenedor {
-    width: 60%; /* Ancho del contenedor para las cajas */
-    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    width: 60%;
+    /* Ancho del contenedor para las cajas */
+    margin: 0 auto;
+    /* Centra el contenedor horizontalmente */
 }
 
+/* Estilo de las cajas de items */
 .items {
-    width: 30%; /* Ancho de las cajas (3 cajas por fila) */
+    width: 30%;
+    /* Ancho de las cajas (3 cajas por fila) */
     float: left;
-    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+    box-sizing: border-box;
     padding: 20px;
     border: 1px solid #ccc;
-    margin: 1%; /* Agrega margen entre las cajas */
+    margin: 1%;
+    /* Agrega margen entre las cajas */
     text-align: center;
 }
 
@@ -86,63 +115,233 @@ margin: 1% auto;
     max-height: 100%;
 }
 
+/* Contenedor general de las imágenes */
 .contenedor_imagenes {
     margin: 10px auto;
     text-align: center;
 }
 
 
+/* Estilo del contenedor del carrito y el total */
+.cajas #carrito {
+    border: 2px solid #000;
+    padding: 30px;
+    width: 15%;
+    float: right;
+    margin-top: -24%;
+    text-align: center;
+    display: grid;
+}
+
+/* Estilo de la lista del carrito */
+#carrito-lista {
+    list-style-type: none;
+    padding: 0;
+}
+
+#carrito-lista li {
+    margin-bottom: 10px;
+}
 
 
 
 
 footer .foo {
-    text-align: center; 
-    padding: 10px; 
-    margin-bottom: 10px; 
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
     clear: both;
 }
+
 footer img {
     height: 2%;
     width: 2%;
-    margin-bottom: 5px; /* Agrega espacio vertical entre la imagen y el texto */
+    margin-bottom: 5px;
+    /* Agrega espacio vertical entre la imagen y el texto */
 }
 
 footer a {
     color: rgb(0, 0, 0);
     text-decoration: none;
-    display: block; /* Asegura que el enlace ocupe todo el ancho */
+    display: block;
+    /* Asegura que el enlace ocupe todo el ancho */
 }
 
 @media (max-width: 768px) {
     /* Estilos específicos para pantallas más pequeñas */
+
     .menu img {
-        width: 20%; /* Reduce el ancho de las imágenes en la barra de navegación */
+        width: 20%;
+        /* Reduce el ancho de las imágenes en la barra de navegación */
     }
 
     .items {
-        width: 90%; /* Ajusta el ancho de las cajas en pantallas más pequeñas */
+        width: 90%;
+        /* Ajusta el ancho de las cajas en pantallas más pequeñas */
     }
 
     .imagenes_abajo img {
-        width: 19%; /* Ajusta el ancho de las imágenes en el carrusel en pantallas más pequeñas */
-         height: 100px; /* Altura automática para mantener la proporción */
+        width: 19%;
+        /* Ajusta el ancho de las imágenes en el carrusel en pantallas más pequeñas */
+        height: 100px;
+        /* Altura automática para mantener la proporción */
+    }
+
+    .mensaje {
+
+
+        margin-top: -25%;
+
     }
 }
 
 
 @media (max-width: 420px) {
+
     /* Estilos específicos para pantallas más pequeñas */
     .menu img {
-        width: 20%; /* Reduce el ancho de las imágenes en la barra de navegación */
+        width: 20%;
+        /* Reduce el ancho de las imágenes en la barra de navegación */
     }
 
     .items {
-        width: 80%; /* Ajusta elancho de las cajas en pantallas más pequeñas */
+        width: 80%;
+        /* Ajusta elancho de las cajas en pantallas más pequeñas */
     }
 
     .imagenes_abajo img {
-        width: 18%; /* Ajusta el ancho de las imágenes en el carrusel en pantallas más pequeñas */
-         height: 70px; 
+        width: 18%;
+        /* Ajusta el ancho de las imágenes en el carrusel en pantallas más pequeñas */
+        height: 70px;
     }
+
+    .mensaje {
+        margin-bottom: -90%;
+        padding: 100px;
+    }
+}
+
+#carrito-lista {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Estilos para el botón de eliminar en el carrito */
+#carrito-lista li {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+#carrito-lista span {
+    position: relative;
+    top: 0;
+    right: -5px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 10%;
+}
+
+#carrito-lista span:hover {
+    background-color: rgb(155, 2, 2);
+}
+
+
+.mensaje {
+    position: absolute;
+    top: 45%;
+    transform: translate(-50%, 100%);
+    font-size: 10px;
+    color: white;
+    background-color: green;
+    padding: 10px;
+    border-radius: 1px;
+    animation: moveText 20s linear infinite;
+    /* Ajusta la duración según sea necesario */
+}
+
+@keyframes moveText {
+    0% {
+        transform: translate(50%, -50%) translateX(-50%);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) translateX(300%);
+    }
+}
+
+.wecircular {
+    text-align: center;
+    height: 100vh;
+}
+
+.wecircular img {
+    max-width: 100%;
+    height: auto;
+    /* proporción original de la imagen */
+    margin: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.formulario-info {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#formulario-contacto {
+    display: grid;
+    gap: 10px;
+}
+
+#formulario-contacto label {
+    font-weight: bold;
+}
+
+#formulario-contacto input,
+#formulario-contacto textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+#formulario-contacto button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#formulario-contacto button:hover {
+    background-color: #45a049;
+}
+
+#pie-de-pagina {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+}
+
+h1 {
+    font-size: 2em;
+    position: relative;
+    padding-top:30px;
+    text-align: center;
+    animation: wave 2s infinite linear;
+}
+
+@keyframes wave {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
 }
